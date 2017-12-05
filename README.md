@@ -18,7 +18,7 @@ Disadv : VGG 19 is computationally expensive and is run multiple times
 
 Adv: VGG 19 is only run once unlike above
 Disadv: Data augmentation techniques cannot be used, unless explicitly computed and stored.
--------
+
 
 In both these implementations we have not messed around with the convolutional part of the pre-trained network and just added onto it, but the same techniques can be used to learn the parameters of more layers(convolutional / FC) from scratch
 For eg. in the 1st technique some of the convolutional layers at the end might be excluded from being non-trainable
