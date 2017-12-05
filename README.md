@@ -11,12 +11,12 @@ There are 2 popular ways of doing this :
 
 1) Add your own choice of FC layers after the pre-trained convoultional model, set all the layers of pre-trained convolutional model to be non-trainable i.e back-propagation only needs to learn parameters in the FC layers and nothing before it, compile it and fit the new-model like any Keras model.
 
-Adv: You can use data-augmentation techniques
+Adv: You can use data-augmentation techniques,
 Disadv : VGG 19 is computationally expensive and is run multiple times
 
 2) Forward propogate the images throught the pre-trained convoultional netwrok and save the output feature vectors for both the training and validation datasets. Now, this becomes your new training and validation dataset, this will then be used as input to a model which is nothing but your FC layers and then will be used to learn the parameters of this model to output your desired class labels.
 
-Adv: VGG 19 is only run once unlike above
+Adv: VGG 19 is only run once unlike above,
 Disadv: Data augmentation techniques cannot be used, unless explicitly computed and stored.
 
 
