@@ -26,3 +26,6 @@ For eg. in the 1st technique some of the convolutional layers at the end might b
 
 
 Note: I have written a quick dirty implementation of the pre-processing of the images, this can also be done in a better way using the pandas library, but that is not the point of this project.
+
+
+The Stanford Dog dataset is available on Kaggle : https://www.kaggle.com/c/dog-breed-identification/data
